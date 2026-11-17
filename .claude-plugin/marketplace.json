@@ -1,0 +1,11 @@
+{
+  "name": "data-project-skills",
+  "owner": { "name": "corymu" },
+  "plugins": [
+    {
+      "name": "data-project-skills",
+      "source": "./",
+      "description": "Scaffold, run and wrap data analytics portfolio projects with a consistent layout, phase checklist and GitHub pushes."
+    }
+  ]
+}
