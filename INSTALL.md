@@ -27,14 +27,20 @@ Without `gh`, the skills still work. They scaffold locally and tell you to creat
 
 ## Option A: Claude Code plugin (recommended)
 
-Inside Claude Code:
+**In the Claude Code terminal**, type these as commands:
 
 ```
 /plugin marketplace add corymu/data-project-skills
 /plugin install data-project-skills@data-project-skills
 ```
 
-Restart Claude Code if the skills do not appear.
+**In the Claude desktop app**, use the menus. Do not paste the commands above into the app.
+
+1. Open Customize, then Marketplace, then Plugin, then Add, then Add from Repo.
+2. In the URL field enter only the repo: `corymu/data-project-skills`
+3. Install `data-project-skills` from the list that appears.
+
+Restart Claude Code if the skills do not appear. Installed this way, skills are prefixed with the plugin name, for example `/data-project-skills:new-data-project`.
 
 ## Option B: Copy the folders
 
@@ -83,7 +89,7 @@ Or accept the prompt Claude gives you the first time you create a project. If th
 
 ## Update
 
-- Plugin: `/plugin marketplace update data-project-skills`
+- Plugin: `/plugin marketplace update data-project-skills` in the terminal, or refresh the marketplace from the Marketplace menu in the desktop app
 - Copy install: pull the repo, delete the old skill folders in `~/.claude/skills/`, run `./scripts/install.sh` again.
 
 ## Uninstall
